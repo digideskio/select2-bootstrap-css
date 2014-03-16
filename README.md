@@ -1,6 +1,8 @@
 [select2-bootstrap-css](https://github.com/t0m/select2-bootstrap-css),  
 forked for Bootstrap 3.
 
+### This forks work has been reintegrated into the original [select2-bootstrap-css](https://github.com/t0m/select2-bootstrap-css) in a [dedicated "bootstrap3"-branch](https://github.com/t0m/select2-bootstrap-css/tree/bootstrap3). [Please go there to be sure to grab the latest version](https://github.com/t0m/select2-bootstrap-css/tree/bootstrap3) and to file issues or pull requests. This repository will stay up for now to offer access to the [demonstrations](http://fk.github.io/select2-bootstrap-css/).
+
 Demonstrations available at  
 http://fk.github.io/select2-bootstrap-css/
 
