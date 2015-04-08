@@ -4,120 +4,124 @@
 	<body>
 		{% include navbar.html %}
 
-		<div class="form-group">
-			<label for="default" class="control-label">Default textbox</label>
-			<input id="default" type="text" class="form-control" placeholder="Placeholder text">
-		</div>
+		<div class="container-fluid">
 
-		<div class="form-group">
-			<label for="single" class="control-label">Select2 single select</label>
-			<select id="single" class="form-control select2">
-				<option></option>
-				{% include select2-select.html %}
-			</select>
-		</div>
+			<div class="form-group">
+				<label for="default" class="control-label">Default textbox</label>
+				<input id="default" type="text" class="form-control" placeholder="Placeholder text">
+			</div>
 
-		<div class="form-group">
-			<label for="multiple" class="control-label">Select2 multi select</label>
-			<select id="multiple" class="form-control select2-multiple" multiple>
-				{% include select2-select.html %}
-			</select>
-		</div>
-
-		<div class="page-header">
-			<h3>Input Groups <small><a href="http://getbootstrap.com/components/#input-groups" ><span class="glyphicon glyphicon-link"></span></a></small></h3>
-		</div>
-
-		<p>To let the Select2-widget know if any elements are directly being appended, prepended or both in the context of a Bootstrap input group, add <code>.select2-bootstrap-prepend</code> and/or <code>.select2-bootstrap-append</code> to the <code>.input-group</code> wrapper element to address the corresponding border-radii.</p>
-
-		<div class="form-group">
-			<label for="select2-single-append" class="control-label">Select2 append Checkbox</label>
-			<div class="input-group select2-bootstrap-prepend">
-				<span class="input-group-addon">
-					<input type="checkbox" checked>
-				</span>
-				<select id="select2-single-append" class="form-control select2-allow-clear">
+			<div class="form-group">
+				<label for="single" class="control-label">Select2 single select</label>
+				<select id="single" class="form-control select2">
 					<option></option>
 					{% include select2-select.html %}
 				</select>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<label for="single-append-radio" class="control-label">Select2 multi append Radiobutton</label>
-			<div class="input-group select2-bootstrap-prepend">
-				<span class="input-group-addon">
-					<input type="radio">
-				</span>
-				<select id="single-append-radio" class="form-control select2-allow-clear" multiple>
-					<option></option>
+			<div class="form-group">
+				<label for="multiple" class="control-label">Select2 multi select</label>
+				<select id="multiple" class="form-control select2-multiple" multiple>
 					{% include select2-select.html %}
 				</select>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<label for="single-append-text" class="control-label">Select2 append</label>
-			<div class="input-group select2-bootstrap-append">
-				<select id="single-append-text" class="form-control select2-allow-clear">
-					<option></option>
-					{% include select2-select.html %}
-				</select>
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button" data-select2-open="single-append-text">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
+			<div class="page-header">
+				<h3>Input Groups <small><a href="http://getbootstrap.com/components/#input-groups" ><span class="glyphicon glyphicon-link"></span></a></small></h3>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<label for="single-prepend-text" class="control-label">Select2 prepend</label>
-			<div class="input-group select2-bootstrap-prepend">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button" data-select2-open="single-prepend-text">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
-				<select id="single-prepend-text" class="form-control select2">
-					<option></option>
-					<option value="A">A</option>
-					<option value="B">B</option>
-					<option value="C">C</option>
-				</select>
-			</div>
-		</div>
+			<p>To let the Select2-widget know if any elements are directly being appended, prepended or both in the context of a Bootstrap input group, add <code>.select2-bootstrap-prepend</code> and/or <code>.select2-bootstrap-append</code> to the <code>.input-group</code> wrapper element to address the corresponding border-radii.</p>
 
-		<div class="form-group">
-			<label for="multi-append" class="control-label">Select2 multi append</label>
-			<div class="input-group select2-bootstrap-append">
-				<select id="multi-append" class="form-control select2" multiple>
-					<option></option>
-					<option value="A">A</option>
-					<option value="B">B</option>
-					<option value="C">C</option>
-				</select>
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button" data-select2-open="multi-append">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
-			</div>
-		</div>
-
-		<div class="form-group">
-			<label for="multi-prepend" class="control-label">Select2 multi prepend</label>
-			<div class="input-group select2-bootstrap-prepend">
-				<span class="input-group-btn">
-					<button class="btn btn-default" type="button" data-select2-open="multi-prepend">
-						State
-					</button>
-				</span>
-				<select id="multi-prepend" class="form-control select2" multiple>
-					<option></option>
+			<div class="form-group">
+				<label for="select2-single-append" class="control-label">Select2 append Checkbox</label>
+				<div class="input-group select2-bootstrap-prepend">
+					<span class="input-group-addon">
+						<input type="checkbox" checked>
+					</span>
+					<select id="select2-single-append" class="form-control select2-allow-clear">
+						<option></option>
 						{% include select2-select.html %}
-				</select>
+					</select>
+				</div>
 			</div>
+
+			<div class="form-group">
+				<label for="single-append-radio" class="control-label">Select2 multi append Radiobutton</label>
+				<div class="input-group select2-bootstrap-prepend">
+					<span class="input-group-addon">
+						<input type="radio">
+					</span>
+					<select id="single-append-radio" class="form-control select2-allow-clear" multiple>
+						<option></option>
+						{% include select2-select.html %}
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="single-append-text" class="control-label">Select2 append</label>
+				<div class="input-group select2-bootstrap-append">
+					<select id="single-append-text" class="form-control select2-allow-clear">
+						<option></option>
+						{% include select2-select.html %}
+					</select>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" data-select2-open="single-append-text">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="single-prepend-text" class="control-label">Select2 prepend</label>
+				<div class="input-group select2-bootstrap-prepend">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" data-select2-open="single-prepend-text">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+					<select id="single-prepend-text" class="form-control select2">
+						<option></option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="multi-append" class="control-label">Select2 multi append</label>
+				<div class="input-group select2-bootstrap-append">
+					<select id="multi-append" class="form-control select2" multiple>
+						<option></option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+					</select>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" data-select2-open="multi-append">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="multi-prepend" class="control-label">Select2 multi prepend</label>
+				<div class="input-group select2-bootstrap-prepend">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" data-select2-open="multi-prepend">
+							State
+						</button>
+					</span>
+					<select id="multi-prepend" class="form-control select2" multiple>
+						<option></option>
+							{% include select2-select.html %}
+					</select>
+				</div>
+			</div>
+
 		</div>
 
 		<div class="container">
@@ -389,7 +393,7 @@
 					markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
 				}
 
-				markup += "<div class='select2-result-repository__statistics'>" + 
+				markup += "<div class='select2-result-repository__statistics'>" +
 							"<div class='select2-result-repository__forks'><span class='glyphicon glyphicon-flash'></span> " + repo.forks_count + " Forks</div>" +
 							"<div class='select2-result-repository__stargazers'><span class='glyphicon glyphicon-star'></span> " + repo.stargazers_count + " Stars</div>" +
 							"<div class='select2-result-repository__watchers'><span class='glyphicon glyphicon-eye-open'></span> " + repo.watchers_count + " Watchers</div>" +
