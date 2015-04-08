@@ -2,7 +2,7 @@ Index: select2-bootstrap.css
 ===================================================================
 --- select2-bootstrap.css
 +++ select2-bootstrap.css
-@@ -9,16 +9,16 @@
+@@ -9,66 +9,61 @@
   *    courtesy of @juristr (@see https://github.com/fk/select2-bootstrap-css/pull/1)
   */
  .select2-container.form-control {
@@ -21,25 +21,30 @@ Index: select2-bootstrap.css
   * Adjust Select2 inputs to fit Bootstrap 3 default .form-control appearance.
   */
  .select2-container .select2-choices .select2-search-field input,
-@@ -29,46 +29,41 @@
-   border-color: #cccccc;
+ .select2-container .select2-choice,
+ .select2-container .select2-choices {
+   background: none;
+   padding: 0;
++  border-color: #cccccc;
+-  border-color: #ccc;
    border-radius: 4px;
    color: #555555;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 +  background-color: #ffffff;
--  background-color: white;
+-  background-color: #fff;
    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
  }
 -
  .select2-search input {
-   border-color: #cccccc;
++  border-color: #cccccc;
+-  border-color: #ccc;
    border-radius: 4px;
    color: #555555;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 +  background-color: #ffffff;
--  background-color: white;
+-  background-color: #fff;
    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -56,7 +61,7 @@ Index: select2-bootstrap.css
  .select2-container .select2-choice {
    height: 34px;
 +  line-height: 1.428571429;
--  line-height: 1.42857;
+-  line-height: 1.42857143;
  }
 -
  /**
@@ -80,8 +85,7 @@ Index: select2-bootstrap.css
  .select2-container.input-lg .select2-choice,
  .input-group-lg .select2-container .select2-choice {
    height: 46px;
-+  line-height: 1.3333333;
--  line-height: 1.33333;
+   line-height: 1.3333333;
    border-radius: 6px;
  }
 -
@@ -283,7 +287,7 @@ Index: select2-bootstrap.css
    border-bottom-right-radius: 4px !important;
    border-bottom-left-radius: 4px !important;
 +  background: #ffffff;
--  background: white;
+-  background: #fff;
    filter: none;
  }
  .input-group.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
@@ -299,7 +303,7 @@ Index: select2-bootstrap.css
   */
  .select2-results .select2-highlighted {
 +  color: #ffffff;
--  color: white;
+-  color: #fff;
    background-color: #337ab7;
  }
 -
@@ -325,8 +329,9 @@ Index: select2-bootstrap.css
  .select2-container-multi .select2-choices .select2-search-choice {
    color: #555555;
 +  background: #ffffff;
--  background: white;
-   border-color: #cccccc;
++  border-color: #cccccc;
+-  background: #fff;
+-  border-color: #ccc;
    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
    -webkit-box-shadow: none;
    box-shadow: none;
@@ -335,7 +340,8 @@ Index: select2-bootstrap.css
  .select2-container-multi .select2-choices .select2-search-choice-focus {
    background: #ebebeb;
    border-color: #adadad;
-   color: #333333;
++  color: #333333;
+-  color: #333;
    -webkit-box-shadow: none;
    box-shadow: none;
  }
@@ -371,9 +377,13 @@ Index: select2-bootstrap.css
   * Address disabled Select2 styles.
   *
   * 1. For Select2 v.3.3.2.
-@@ -438,16 +396,16 @@
+@@ -435,19 +393,19 @@
+ .select2-container.select2-container-disabled .select2-choice,
+ .select2-container.select2-container-disabled .select2-choices {
+   cursor: not-allowed;
    background-color: #eeeeee;
-   border-color: #cccccc;
++  border-color: #cccccc;
+-  border-color: #ccc;
  }
  .select2-container.select2-container-disabled .select2-choice .select2-arrow,
 +.select2-container.select2-container-disabled .select2-choices .select2-arrow,

@@ -26,11 +26,11 @@
     margin-right: 1em; }
   .select2-result-repository__forks, .select2-result-repository__stargazers, .select2-result-repository__watchers {
     display: inline-block;
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 11px; }
   .select2-result-repository__description {
     font-size: 13px;
-    color: #777777;
+    color: #777;
     margin-top: 4px; }
   .select2-highlighted .select2-result-repository__title {
     color: white; }
@@ -65,7 +65,7 @@ a:hover, a:focus {
     text-align: center;
     font-size: 16px; }
   .jumbotron hr {
-    border-color: #eeeeee;
+    border-color: #eee;
     width: 100px; }
   .jumbotron .lead {
     font-size: 16px; }
@@ -91,7 +91,7 @@ a:hover, a:focus {
     padding: 18px 24px;
     transition: all 0.1s ease-in-out; }
     .jumbotron .btn-outline:hover, .jumbotron .btn-outline:active {
-      color: white;
+      color: #fff;
       background-color: #337ab7; }
   .jumbotron .btn-lg {
     padding: 10px 16px;
@@ -116,7 +116,7 @@ a:hover, a:focus {
 
 .footer {
   text-align: center;
-  color: #cccccc; }
+  color: #ccc; }
   .footer a {
     border-bottom: 1px solid transparent;
     color: #337ab7;
