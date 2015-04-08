@@ -293,7 +293,27 @@
 
 /**
  * Select2 widgets in Bootstrap Input Groups
+ **/
+/**
+ * Mimick Bootstraps .input-group .form-control styles.
  *
+ * @see https://github.com/twbs/bootstrap/blob/master/less/input-groups.less
+ *
+ * 1. Added to fix https://github.com/t0m/select2-bootstrap-css/issues/42
+ */
+.input-group .select2-container {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  display: table;
+  /* 1 */
+  table-layout: fixed;
+  /* 1 */
+}
+
+/**
  * When Select2 widgets are combined with other elements using Bootstrap 3's
  * "Input Group" component, we don't want specific edges of the Select2 container
  * to have a border-radius.

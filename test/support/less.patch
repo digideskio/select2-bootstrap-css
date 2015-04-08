@@ -263,9 +263,24 @@ Index: select2-bootstrap.css
 -
  /**
   * Select2 widgets in Bootstrap Input Groups
-  *
+  **/
+ /**
+@@ -308,12 +277,13 @@
+   width: 100%;
+   margin-bottom: 0;
+   display: table;
+   /* 1 */
++
+   table-layout: fixed;
+   /* 1 */
++
+ }
+-
+ /**
   * When Select2 widgets are combined with other elements using Bootstrap 3's
-@@ -312,25 +281,22 @@
+  * "Input Group" component, we don't want specific edges of the Select2 container
+  * to have a border-radius.
+@@ -332,25 +302,22 @@
  .input-group.select2-bootstrap-prepend [class^="select2-choice"] {
    border-bottom-left-radius: 0 !important;
    border-top-left-radius: 0 !important;
@@ -292,7 +307,7 @@ Index: select2-bootstrap.css
  }
  .input-group.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
    border-bottom-left-radius: 0 !important;
-@@ -351,68 +317,61 @@
+@@ -371,68 +338,61 @@
  }
  .input-group.input-group-lg.select2-bootstrap-append .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
    border-bottom-left-radius: 6px !important;
@@ -367,7 +382,7 @@ Index: select2-bootstrap.css
   * Adjust "no results" and "selection limit" messages to make use
   * of Bootstrap 3's default "Alert" style.
   *
-@@ -423,9 +382,8 @@
+@@ -443,9 +403,8 @@
  .select2-results .select2-selection-limit {
    background-color: #fcf8e3;
    color: #8a6d3b;
@@ -377,7 +392,7 @@ Index: select2-bootstrap.css
   * Address disabled Select2 styles.
   *
   * 1. For Select2 v.3.3.2.
-@@ -435,19 +393,19 @@
+@@ -455,19 +414,19 @@
  .select2-container.select2-container-disabled .select2-choice,
  .select2-container.select2-container-disabled .select2-choices {
    cursor: not-allowed;
@@ -400,7 +415,7 @@ Index: select2-bootstrap.css
   * Address Select2's loading indicator position - which should not stick
   * to the right edge of Select2's search input.
   *
-@@ -472,19 +430,20 @@
+@@ -492,19 +451,20 @@
  .select2-container-multi .select2-choices .select2-search-field input.select2-active,
  .select2-more-results.select2-active {
    background-position: 99%;
